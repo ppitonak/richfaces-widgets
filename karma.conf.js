@@ -8,13 +8,33 @@ basePath = '';
 
 // list of files / patterns to load in the browser
 files = [
+  // dependencies
   JASMINE,
   JASMINE_ADAPTER,
-  'src/scripts/jquery/jquery.js',
-  'src/scripts/lodash/lodash.js',
-  'src/scripts/bootstrap/bootstrap.js',
-  'src/scripts/richfaces/*.js',
-  'test/*.js'
+  'components/jquery/jquery.js',
+  'components/jquery-ui/ui/*.js',
+  'components/lodash/lodash.js',
+  'components/bootstrap/dist/js/bootstrap.js',
+  'components/jasmine-jquery/lib/jasmine-jquery.js',
+ 
+  // RichFaces components 
+  'src/widgets/select/*.js',
+ 
+  // tests 
+  'test/**/*.js',
+  
+  // fixtures
+  {
+    pattern: 'test/**/*.html',
+    watched: true,
+    included: false,
+    server: true
+  }
+];
+
+
+// list of files to exclude
+exclude = [
 ];
 
 
