@@ -71,7 +71,8 @@ module.exports = function(config) {
     customLaunchers: {
       SL_Chrome_latest: {
         base: 'SauceLabs',
-        browserName: 'chrome'
+        browserName: 'chrome',
+        version: 32
       },
       SL_Firefox_ESR: {
         base: 'SauceLabs',
@@ -81,7 +82,7 @@ module.exports = function(config) {
       SL_Firefox_latest: {
         base: 'SauceLabs',
         browserName: 'firefox',
-        version: 25
+        version: 27
       },
       SL_IE_11: {
         base: 'SauceLabs',
@@ -110,8 +111,8 @@ module.exports = function(config) {
       SL_Safari_latest: {
         base: 'SauceLabs',
         browserName: 'safari',
-        version: 6,
-        platform: "OS X 10.8"
+        version: 7,
+        platform: "OS X 10.9"
       },
       SL_Opera_latest: {
         base: 'SauceLabs',
@@ -121,13 +122,13 @@ module.exports = function(config) {
       SL_iPhone_latest: {
         base: 'SauceLabs',
         browserName: 'iphone',
-        version: "6.1",
-        platform: "OS X 10.8"
+        version: "7",
+        platform: "OS X 10.9"
       },
       SL_Android_4: {
         base: 'SauceLabs',
         browserName: 'android',
-        version: "4.0",
+        version: "4.3",
         platform: "Linux"
       }
     },
